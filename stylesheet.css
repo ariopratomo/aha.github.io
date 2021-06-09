@@ -1,100 +1,203 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding: 0 90px;
 }
 
-.top-wrapper {
-  background-image: url("../images/bg.png");
-  height: 800px;
-}
-#main {
-  padding-top: 119px;
-}
-#main h1 {
-  color: #fff;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 65px;
+.header {
+    max-width: 1440px;
+    height: 60px;
+    padding-top: 40px;
 }
 
-#main p {
-  margin-top: 20px;
+.bg-color {
+    /* background-color: #0F1837; */
+    background-image: url('background.png');
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+}
 
-  margin-bottom: 60px;
-  color: #fff;
-  font-weight: 400px;
-  font-size: 16px;
-  line-height: 32px;
+.header-logo {
+    float: left;
+    /* padding-left: 30px; */
 }
-.flex {
-  display: flex;
+
+.rectangle {
+    width: 53px;
+    height: 60px;
 }
-.flex-auto {
-  flex: auto;
-  padding-right: 15px;
+
+.menu-icon {
+    display: none;
+    float: right;
+    color: #fff;
 }
-.explore-box {
-  background-color: #fff;
-  padding: 21px;
-  width: 713px;
-  border-radius: 4px;
-}
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-label {
-  display: block;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #020b2a;
-}
-.form-input {
-  display: block;
-  width: 230px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 10px;
-  color: #020b2a;
-  background-color: #f7f7f9;
-  border: none;
-}
-.btn {
-  padding: 21px 30px 21px 30px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  align-content: center;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-}
-.btn:hover {
-  opacity: 1;
-}
-.btn-explore {
-  background-color: #83d987;
-  color: #132039;
-}
-.btn-explore:active {
-  background-color: #33cf3b;
-}
-@media (min-width: 1000px) {
-  .container {
-    width: 1170px;
+
+.header-list {
+    /* float: left; */
+    /* padding-left: 350px; */
+    /* padding-top: 11px; */
+    width: 487px;
+    height: 27px;
     margin: 0 auto;
-  }
+    /* line-height: 67px; */
+}
+
+.header-list a {
+    padding-left: 30px;
+    font-size: 18px;
+    color: silver;
+    text-decoration: none;
+}
+
+/* a:hover {
+    color: #83D987;
+} */
+
+.btn-account {
+    /* float: right; */
+    /* padding-top: 5px; */
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    background-color: #83D987;
+    padding: 15px 40px;
+    cursor: pointer;
+    color: #0F1837;
+    border-radius: 4px;
+}
+
+.header-right {
+    float: right;
+}
+
+/* .btn {
+    border-radius: 4px;
+    opacity: 0.8;
+    display: inline-block;
+} */
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* .akun {
+    background-color: #83D987;
+    padding: 15px 40px;
+    cursor: pointer;
+} */
+
+/* .content-half {
+    width: 60%;
+} */
+
+.title {
+    margin-top: 120px;
+}
+
+.title h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 65px;
+}
+
+.title p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #9094A2;
+    margin-top: 20px;
+}
+
+.explore-section {
+    max-width: 713px;
+    height: 112px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 60px;
+}
+
+.search-bar {
+    width: 230px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    background-color: #F7F7F9;
+    border-radius: 6px;
+}
+
+.btn-explore {
+    background-color: #83D987;
+    border-radius: 4px;
+    display: inline-block;
+    width: 170px;
+    height: 70px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-explore a {
+    text-decoration: none;
+    color: #0F1837;
+    line-height: 70px;
+}
+
+@media (max-width: 760px) {
+    .header-list {
+        display: none;
+    }
+
+    .btn-account {
+        display: none;
+    }
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .title h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .title p {
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .explore-section {
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        margin-top: 10px;
+        width: 300px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .btn-explore {
+        width: 100%;
+        border-radius: 0;
+    }
+
 }
