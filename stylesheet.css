@@ -208,10 +208,10 @@ max-width: 1440px;
 height: 946px;
 background: #E5E5E5;
 line-height: 30px;
-flex:auto;
 }
 
 .wrapper-right{
+float:right;
 font-size: 20px;
 width: 396px;
 height: 454px;
@@ -220,6 +220,7 @@ margin-top: 155px;
 }
 
 .wrapper-left{
+float:left;
 margin-left: 230px;
 margin-top: 100px;
 }
