@@ -202,15 +202,15 @@ body {
 
 }
 
+
 .wrapper{
 max-width: 1440px;
 height: 946px;
 background: #E5E5E5;
+line-height: 30px;
 }
 
-
 .wrapper-right{
-line-height: 30px;
 font-size: 20px;
 float: right;
 width: 396px;
@@ -236,13 +236,14 @@ font-size: 20px;
 display: flex;
 width: 877px;
 height: 96px;
+margin-top:800px;
 margin-bottom: 50px;
 margin: 0 auto;
 }
 
-.type{
+.type_{
 flex: auto;
-padding: 10px 10px;
+paddig: 10px 10px;
 text-align: center;
 line-height: 30px;
 }
@@ -407,9 +408,10 @@ img {
   #body-2 > .best-top > .flex-auto > a.recomendation {
     font-size: 12px;
   }
-  .price{
+    .price{
     width:100%;
     flex-direction:column;
+    text-align: center;
   }
   .wrapper{
   width:100%;
@@ -434,6 +436,7 @@ img {
     .price{
     width:100%;
     flex-direction:column;
+    text-align: center;
     }
     .wrapper{
       width:100%;
